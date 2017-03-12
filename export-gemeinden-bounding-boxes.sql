@@ -14,11 +14,11 @@ COPY (
 			ceil(max(st_xmax(geom) + :buffer)/:precision)*:precision as maxx,
 			ceil(max(st_ymax(geom) + :buffer)/:precision)*:precision as maxy
 		FROM
-			VG250_KRS
+			vg250_gem
 		GROUP BY
 			rs
 		ORDER BY
-			rs) AS VG_250_KRS_BBOX
+			rs) AS VG250_GEM_BBOX
 )
 TO
 	:output

@@ -37,6 +37,29 @@ Screenshot from QGIS:
 
 ![Bounding Boxes of Districts - Screenshot from QGIS](assets/images/kreise-bounding-boxes.png)
 
+## Municipalities (Gemeinden)
+
+```
+psql^
+ --username=postgres^
+ --dbname VG^
+ -f export-gemeinden-bounding-boxes.sql^
+ --set=precision="0.01"^
+ --set=buffer="0.005"^
+ --set=output="'%cd%\gemeinden-bounding-boxes.txt'"
+```
+
+Produces:
+
+```
+rs,minx,miny,maxx,maxy,bbox_wkt
+010010000000,9.35,54.74,9.52,54.85,"POLYGON((9.35 54.74,9.35 54.85,9.52 54.85,9.52 54.74,9.35 54.74))"
+```
+
+Screenshot from QGIS:
+
+![Bounding Boxes of Municipalities - Screenshot from QGIS](assets/images/gemeinden-bounding-boxes.png)
+
 #License
 
 Scripts are licensed under [BSD 2-clause license](LICENSE).
