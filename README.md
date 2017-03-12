@@ -40,3 +40,6 @@ Screenshot from QGIS:
 #License
 
 Scripts are licensed under [BSD 2-clause license](LICENSE).
+
+Original data of German administrative areas is available from the [State Department of Cartography and Geodesy](http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=1&gdz_unt_zeile=14&gdz_user_id=0) and is subject to the following [Usage Regulations](http://www.geodatenzentrum.de/docpdf/geonutzv.pdf). 
+Original data © GeoBasis-DE / [BKG](http://www.bkg.bund.de/) 2017.
